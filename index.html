@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Base</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+  <script src="js/modernizr.js"></script>
+</head>
+<body class="">
+
+
+<!-- LOGIN SCREEN -->
+
+<!-- <div class="container login">
+
+  <img src="images/logo.png" alt="Therewolf" class="login--logo">
+  <form action="/login.php" class="form--login">
+    <div class="col-12">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+    </div>
+    <button class="button" type="submit">Sign In</button>
+  </form>
+  <a href="#" class="login--access">New here? Request an access code.</a>
+
+</div> -->
+
+<!-- WELCOME SCREEN -->
+
+<!-- <div class="container welcome text-center">
+  <h1 class="h3">Search existinging places or add your own to get started</h1>
+  <div class="col-12">
+    <input type="text" placeholder="Search" class="search">
+  </div>
+  <a class="button--circle"><span class="icon-plus"></span></a>
+</div> -->
+
+<!-- DATA ENTRY SCREEN -->
+
+<div class="venue">
+
+  <div class="venue--hero">
+    <div class="container clear">
+      <a class="button--circle venue--image-add"><span class="icon-camera-alt"></span></a>
+      <hgroup>
+        <h1 class="venue--name">The Lodge</h1>
+        <h2 class="venue--type">Bar</h2>
+      </hgroup>
+      <img src="images/venue-image-default.jpg" alt="" class="venue--image no-desktop">
+    </div>
+  </div>
+
+  <div class="venue--categories-wrapper">
+    <ul class="venue--categories__nav">
+      <li><a href="#">Basic Info</a></li>
+      <li><a href="#">Location</a></li>
+      <li><a href="#">Hours</a></li>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Drinks</a></li>
+      <li><a href="#">Vibe</a></li>
+    </ul>
+  </div>
+  <div class="venue--categories__content">
+
+    <div class="venue--category basic-info">
+      <div class="data-row">
+        <div class="data-row__label">
+          Name
+        </div>
+        <div class="data-row__content">
+          The Lodge
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          Type of Venue
+        </div>
+        <div class="data-row__content">
+          Bar
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          Secondary Type
+        </div>
+        <div class="data-row__content">
+          Dive
+        </div>
+      </div>
+    </div><!-- end category -->
+
+    <div class="venue--category location">
+      <div class="data-row">
+        <div class="data-row__label">
+          Address
+        </div>
+        <div class="data-row__content">
+          49 N. Orange Ave
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          City
+        </div>
+        <div class="data-row__content">
+          Orlando
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          State
+        </div>
+        <div class="data-row__content">
+          FL
+        </div>
+      </div>
+      <div class="container">
+        <a class="button button--geolocation">Set Geolocation</a>
+      </div>
+    </div><!-- end category -->
+
+    <div class="venue--category hours">
+      <div class="data-row">
+        <div class="data-row__label">
+          S
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          M
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          T
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          W
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          T
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+
+      <div class="data-row">
+        <div class="data-row__label">
+          F
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+
+      <div class="data-row current">
+        <div class="data-row__label">
+          S
+        </div>
+        <div class="data-row__content">
+          4PM - 2AM
+        </div>
+      </div>
+    </div><!-- end category -->
+
+    <div class="venue--category food">
+      <div class="data-row">
+        <div class="data-row__label">
+          Food
+        </div>
+        <div class="data-row__content">
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hasFood">
+              <label class="onoffswitch-label" for="hasFood">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-row text-center">
+        <a class="button--circle disabled"><span class="icon-plus"></span></a>
+      </div>
+    </div><!-- end category -->
+
+    <div class="venue--category drinks">
+      <div class="data-row">
+        <div class="data-row__label">
+          Drinks
+        </div>
+        <div class="data-row__content">
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="hasDrinks" checked>
+              <label class="onoffswitch-label" for="hasDrinks">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-row tag">
+        <div class="data-row__label">
+          Craft Beer
+        </div>
+        <div class="data-row__content">
+          <a class="icon-thumbs-up tag-weight"></a>
+          <a class="icon-thumbs-down tag-weight"></a>
+        </div>
+      </div>
+
+      <div class="data-row tag">
+        <div class="data-row__label">
+          Strong Drinks
+        </div>
+        <div class="data-row__content">
+          <a class="icon-thumbs-up tag-weight"></a>
+          <a class="icon-thumbs-down tag-weight"></a>
+        </div>
+      </div>
+
+      <div class="data-row tag">
+        <div class="data-row__label">
+          Fireball
+        </div>
+        <div class="data-row__content">
+          <a class="icon-thumbs-up tag-weight"></a>
+          <a class="icon-thumbs-down tag-weight"></a>
+        </div>
+      </div>
+
+      <div class="data-row tag">
+        <div class="data-row__label">
+          Jager
+        </div>
+        <div class="data-row__content">
+          <a class="icon-thumbs-up tag-weight"></a>
+          <a class="icon-thumbs-down tag-weight"></a>
+        </div>
+      </div>
+
+      <div class="data-row tag">
+        <div class="data-row__label">
+          2-for-1 Happy Hour
+        </div>
+        <div class="data-row__content">
+          <a class="icon-thumbs-up tag-weight"></a>
+          <a class="icon-thumbs-down tag-weight"></a>
+        </div>
+      </div>
+
+      <div class="data-row text-center">
+        <a class="button--circle"><span class="icon-plus"></span></a>
+      </div>
+    </div><!-- end category -->
+
+    <div class="venue--category vibe">
+      
+    </div><!-- end category -->
+
+  </div> <!-- end categories -->
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<script src="js/default.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to your website's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+// ==========================================================================
+// Desktop Custom Styles
+// ==========================================================================
+
+// your styles go here...
+
+.green{
+	background: $lt-teal;
+
+	h1{
+		color: white;
+	}
+}
+
+.login{
+	padding-top: 4em;
+	padding-bottom: 5em;
+}
+
+.login--logo{
+	@extend .center;
+	@extend .responsive;
+	margin-bottom: 3em;
+	max-width: 50%;
+}
+
+.welcome{
+	padding-top: 5em;
+	@include fadeinframe;
+
+	.search{
+		margin-top: 2em;
+	}
+	.button--circle{
+		margin-top: 12em;
+	}
+}
+
+.venue--hero{
+	@extend .text-center;
+	padding-top: 4em;
+	padding-bottom: 2em;
+	background: $dk-grey;	
+	color: white;
+}
+	.venue--name{
+		@extend .h2;
+		margin-bottom: 0;
+	}
+	.venue--type{
+		@extend .h5;
+	}
+
+	.venue--image-add{
+		@include font-size(24);
+	}
+.venue--category{
+	background: white;
+}
+
+.venue--categories__nav{
+	@extend .list-unstyled;
+	background: $lt-grey;
+
+	li{
+
+	}
+
+	a{
+		@extend .block;
+		padding: 1.5em 15px;
+		text-decoration: none;
+	}
+
+	.slick-center{
+		a{
+			color: $teal;
+			font-family: $default-font-bold;
+		}
+	}
+}
+
+.data-row{
+	@extend .clear;
+	padding: 1.5em 10px;
+	border-bottom: solid 1px lighten($lt-grey, 5%);
+
+	&.current{
+		background: $teal;
+		color: white;
+	}
+}
+	.data-row__label,
+	.data-row__content{
+		@extend .col;
+		@extend .col-6;
+	}
+
+	.data-row__label{
+		font-family: $default-font-bold;
+	}
+
+	.data-row__content{
+		@extend .text-right;
+		.onoffswitch{
+			float: right;
+		}
+
+		.tag-weight{
+			@extend .block;
+			@extend .right;
+			@include font-size(22);
+			margin: 0 8px;
+			color: $lt-grey;
+		}
+		.icon-thumbs-up.active{
+			color: $teal;
+		}
+		.icon-thumbs-down.active{
+			color: $dk-grey;
+		}
+	}
+
+	.button--geolocation{
+		@extend .block;
+		@extend .col-12;
+		margin-top: 1.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}

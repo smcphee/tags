@@ -1,0 +1,124 @@
+// ==========================================================================
+// Base – Custom Buttons
+// ==========================================================================
+.button {
+  @include border-radius(60px);
+  border: 0;
+  padding: 1em 3em;
+  background-color: $default-button-color;
+  color: #fff;
+  text-decoration: none;
+  @extend .text-center;
+  @extend .inline-block;
+  position: relative;
+  font-family: $default-font-sbold;
+  text-transform: uppercase;
+  @include transition();
+}
+.button:hover {
+  background-color: $default-button-hover-color;
+}
+.button:active {
+  top: 1px;
+}
+
+  .button--circle{
+    @extend .button;
+    padding:0;
+    width:60px;
+    height: 60px;
+    line-height: 60px;
+
+    .icon-plus{
+      @include font-size(24);
+      line-height: 60px;
+    }
+  }
+
+.grey-button {
+  background-color: #eee;
+  color: #434343;
+}
+.grey-button:hover {
+  background-color: #f1f1f1;
+}
+
+.button[disabled],
+.button.disabled {
+  color: #999;
+  background-color: #f1f1f1;
+  @include transition();
+}
+
+.button-unstyled {
+  @include font-size($default-font-size);
+  color: $default-link-color;
+  text-decoration: underline;
+  border: 0;
+  background: transparent;
+  height: auto;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  &:hover {
+    text-decoration: none;
+  } // end hover
+}
+.button-unstyled[disabled],
+.button-unstyled.disabled {
+  text-decoration: none;
+  color: #999;
+  background-color: #ccc;
+}
+
+
+
+//ON-OFF
+
+.onoffswitch {
+    position: relative; width: 76px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 50px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "YES";
+    padding-left: 10px;
+    background-color: $teal; color: #FFFFFF;
+    text-align: left;
+}
+.onoffswitch-inner:after {
+    content: "NO";
+    padding-right: 10px;
+    background-color: #F25050; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; height: 18px; margin: 8px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF; border-radius: 50px;
+    position: absolute; top: 0; bottom: 0; right: 42px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}

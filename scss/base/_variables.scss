@@ -1,0 +1,48 @@
+// ==========================================================================
+// Base – Global Variables
+// ==========================================================================
+
+// Container Defaults
+$mobile-container:   100%;
+$tablet-container:   720px;
+$desktop-container:  960px;
+
+
+// Resonsive Design Break Points
+$mobile-breakpoint:  ($tablet-container + 19px);
+$tablet-breakpoint:  ($tablet-container + 20px);
+$desktop-breakpoint: ($desktop-container);
+
+// Default Fonts
+$default-font-family:      'OpenSans', sans-serif;
+$default-font-sbold:      'OpenSansSemiBold', sans-serif;
+$default-font-bold:      'OpenSansBold', sans-serif;
+$default-font-xbold:      'OpenSansExtraBold', sans-serif;
+$default-code-font-family: 'courier new', monospace, serif;
+
+// Font Size Defaults
+$h1: 35;
+$h2: 30;
+$h3: 26;
+$h4: 20;
+$h5: 18;
+$h6: 16;
+
+$default-font-size:   16;
+$default-line-height: 21;
+
+
+//Colors
+
+$dk-teal:                     #005c53;
+$lt-teal:                     #6cc7b7;
+$teal:                        #349b8f;
+$dk-grey:                     #252525;
+$med-grey:                    #666666;
+$lt-grey:                     #dad9d9;
+
+// Default Colours
+$default-font-color:          $med-grey;
+$default-link-color:          $dk-grey;
+$default-button-color:        $teal;
+$default-button-hover-color:  $dk-teal;
