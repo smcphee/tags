@@ -48,3 +48,10 @@ $('.tag-weight').click(function(e){
 	$(this).siblings().removeClass('active');
 	$(this).toggleClass('active');
 });
+
+//Toggles the active class on tag selections
+
+$('.tag__list .tag').click(function(e){
+	e.preventDefault();
+	$(this).toggleClass('selected');
+});

@@ -262,4 +262,220 @@
 .no-margin { margin: 0; }
 .no-padding { padding: 0; }
 
+//Padding & Margins
+.pt{
+  padding-top: $b-space;
+}
+  .pt--s{
+    padding-top: $b-space-s;
+  }
+  .pt--l{
+    padding-top: $b-space-l;
+  }
+  .pt--xl{
+    padding-top: $b-space-xl;
+  }
+  .no-pt{
+    padding-top: 0;
+  }
+
+.pb{
+  padding-bottom: $b-space;
+}
+  .pb--s{
+    padding-bottom: $b-space-s;
+  }
+  .pb--l{
+    padding-bottom: $b-space-l;
+  }
+  .pb--xl{
+    padding-bottom: $b-space-xl;
+  }
+  .no-pb{
+    padding-bottom: 0;
+  }
+
+.ptb{
+  @extend .pt;
+  @extend .pb;
+}
+  .ptb--s{
+    @extend .pt--s;
+    @extend .pb--s;
+  }
+  .ptb--l{
+    @extend .pt--l;
+    @extend .pb--l;
+  }
+  .ptb--xl{
+    @extend .pt--xl;
+    @extend .pb--xl;
+  }
+  .no-ptb{
+    @extend .no-pt;
+    @extend .no-pb;
+  }
+
+.pl{
+  padding-left: $b-pad;
+}
+  .pl--s{
+    padding-left: $b-pad-s;
+  }
+  .pl--l{
+    padding-left: $b-pad-l;
+  }
+  .pl--xl{
+    padding-left: $b-pad-xl;
+  }
+  .no-pl{
+    padding-left: 0;
+  }
+
+.pr{
+  padding-right: $b-pad;
+}
+  .pr--s{
+    padding-right: $b-pad-s;
+  }
+  .pr--l{
+    padding-right: $b-pad-l;
+  }
+  .pr--xl{
+    padding-right: $b-pad-xl;
+  }
+  .no-pr{
+    padding-right: 0;
+  }
+
+.plr{
+  @extend .pl;
+  @extend .pr;
+}
+  .plr--s{
+    @extend .pl--s;
+    @extend .pr--s;
+  }
+  .plr--l{
+    @extend .pl--l;
+    @extend .pr--l;
+  }
+  .plr--xl{
+    @extend .pl--xl;
+    @extend .pr--xl;
+  }
+  .no-plr{
+    @extend .no-pl;
+    @extend .no-pr;
+  }
+
+.mt{
+  margin-top: $b-space;
+}
+  .mt--xs{
+    margin-top: $b-space-xs;
+  }
+  .mt--s{
+    margin-top: $b-space-s;
+  }
+  .mt--l{
+    margin-top: $b-space-l;
+  }
+  .mt--xl{
+    margin-top: $b-space-xl;
+  }
+  .no-mt{
+    margin-top: 0;
+  }
+
+.mb{
+  margin-bottom: $b-space;
+}
+  .mb--s{
+    margin-bottom: $b-space-s;
+  }
+  .mb--l{
+    margin-bottom: $b-space-l;
+  }
+  .mb--xl{
+    margin-bottom: $b-space-xl;
+  }
+  .no-mb{
+    margin-bottom: 0;
+  }
+
+.mtb{
+  @extend .mt;
+  @extend .mb;
+}
+  .mtb--s{
+    @extend .mt--s;
+    @extend .mb--s;
+  }
+  .mtb--l{
+    @extend .mt--l;
+    @extend .mb--l;
+  }
+  .mtb--xl{
+    @extend .mt--xl;
+    @extend .mb--xl;
+  }
+  .no-mtb{
+    @extend .no-mt;
+    @extend .no-mb;
+  }
+
+.ml{
+  margin-left: $b-pad;
+}
+  .ml--s{
+    margin-left: $b-pad-s;
+  }
+  .ml--l{
+    margin-left: $b-pad-l;
+  }
+  .ml--xl{
+    margin-left: $b-pad-xl;
+  }
+  .no-ml{
+    margin-left: 0;
+  }
+
+.mr{
+  margin-right: $b-pad;
+}
+  .mr--s{
+    margin-right: $b-pad-s;
+  }
+  .mr--l{
+    margin-right: $b-pad-l;
+  }
+  .mr--xl{
+    margin-right: $b-pad-xl;
+  }
+  .no-mr{
+    margin-right: 0;
+  }
+
+.mlr{
+  @extend .ml;
+  @extend .mr;
+}
+  .mlr--s{
+    @extend .ml--s;
+    @extend .mr--s;
+  }
+  .mlr--l{
+    @extend .ml--l;
+    @extend .mr--l;
+  }
+  .mlr--xl{
+    @extend .ml--xl;
+    @extend .mr--xl;
+  }
+  .no-mlr{
+    @extend .no-ml;
+    @extend .no-mr;
+  }
+
 @import "../_desktop-styles"; // Import Custom Desktop Styles

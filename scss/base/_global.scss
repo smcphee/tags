@@ -112,6 +112,14 @@ h5, .h5 {
 h6, .h6 {
   @include font-size($h6);
 }
+
+.primary-heading{
+  color: $dk-grey;
+  font-family: $default-font-bold;
+}
+.secondary-heading{
+  color: $med-grey;
+}
 // Remove Heading Styling
 .no-style-heading {
   @extend .no-margin;

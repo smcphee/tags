@@ -35,3 +35,83 @@ nav ul, nav ol {
     @extend .inline-block;
   }
 }
+
+.venue__list{
+  @extend .list-unstyled;
+}
+  .venue__list__item{
+    @extend .ptb--s;
+    @extend .pl--l;
+    @extend .clear;
+    border-bottom: solid 1px lighten($lt-grey, 5%);
+  }
+  .venue__list__image{
+    @extend .col;
+    @extend .col-2;
+    @extend .no-padding;
+    max-width: 50px;
+
+    img{
+      @extend .block;
+      @extend .center;
+      @extend .responsive;
+    }
+  }
+
+  .venue__list__name{
+    @extend .col;
+    @extend .col-10;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    hgroup{
+      @extend .col;
+      @extend .col-10;
+      @extend .no-plr;
+    }
+
+    h2{
+      @include font-size(14);
+      @extend .no-mb;
+    }
+    h3{
+      @include font-size(12);
+    }
+
+    .icon-angle-right{
+      @extend .col;
+      @extend .col-2;
+      @extend .text-center;
+      @extend .no-pr;
+      @include line-height(40);
+    }
+  }
+
+
+.tag__list{
+  @extend .list-unstyled;
+
+  .tag{
+    @extend .data-row;
+
+    &.selected{
+      .tag__status{
+        color: $teal;
+      }
+    }
+  }
+
+    .tag__name{
+      @extend .data-row__label;
+      @extend .col-10;
+    }
+
+    .tag__status{
+      @extend .col;
+      @extend .col-2;
+      @extend .text-right;
+      @include font-size(20);
+      color: $lt-grey;
+    }
+
+}

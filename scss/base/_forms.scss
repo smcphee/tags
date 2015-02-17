@@ -135,3 +135,30 @@ input::-moz-focus-inner {
       color: $dk-teal;
     }
   }
+
+.list--search{
+  @extend .ptb--s;
+  @extend .plr--l;
+  background: lighten($lt-grey, 5%);
+
+  .wrap{
+    position: relative;
+
+    .icon-search{
+      @include line-height(20);
+      position: absolute;
+      display:block;
+      left: 0;
+      top:0;
+      padding:12px;
+      color: lighten($lt-grey, 5%);
+    }
+  }
+
+  input[type="search"]{
+    @extend .block;
+    box-sizing: border-box;
+    border: solid 1px $lt-grey, 5%;
+    padding-left: 30px;
+  }
+}

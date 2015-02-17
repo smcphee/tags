@@ -208,14 +208,14 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased; }
 
-.clear:before, .venue__list__item:before, .data-row:before, .clear:after, .venue__list__item:after, .data-row:after {
+.clear:before, .venue__list__item:before, .data-row:before, .tag__list .tag:before, .clear:after, .venue__list__item:after, .data-row:after, .tag__list .tag:after {
   content: "";
   display: table; }
 
-.clear:after, .venue__list__item:after, .data-row:after {
+.clear:after, .venue__list__item:after, .data-row:after, .tag__list .tag:after {
   clear: both; }
 
-.clear, .venue__list__item, .data-row {
+.clear, .venue__list__item, .data-row, .tag__list .tag {
   zoom: 1; }
 
 i, em, .em, dfn, blockquote, q {
@@ -319,7 +319,8 @@ h6, .h6 {
   font-size: 1rem; }
 
 .primary-heading {
-  color: #252525; }
+  color: #252525;
+  font-family: "OpenSansBold", sans-serif; }
 
 .secondary-heading {
   color: #666666; }
@@ -347,11 +348,11 @@ nav ul, nav ol {
   list-style: none;
   list-style-image: none; }
 
-.list-unstyled, .list-inline, .venue__list, .venue--categories__nav {
+.list-unstyled, .list-inline, .venue__list, .tag__list, .venue--categories__nav {
   list-style: none;
   padding: 0;
   margin: 0; }
-  .list-unstyled li, .list-inline li, .venue__list li, .venue--categories__nav li {
+  .list-unstyled li, .list-inline li, .venue__list li, .tag__list li, .venue--categories__nav li {
     margin-top: 0;
     margin-bottom: 0; }
 
@@ -366,14 +367,20 @@ nav ul, nav ol {
   padding-bottom: 5px; }
   .venue__list__name h2 {
     font-size: 14px;
-    font-size: 0.875rem;
-    font-family: "OpenSansBold", sans-serif; }
+    font-size: 0.875rem; }
   .venue__list__name h3 {
     font-size: 12px;
     font-size: 0.75rem; }
   .venue__list__name .icon-angle-right {
     line-height: 40px;
     line-height: 2.5rem; }
+
+.tag__list .tag.selected .tag__status {
+  color: #349b8f; }
+.tag__list .tag__status {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #dad9d9; }
 
 blockquote {
   font-size: 22px;
@@ -789,7 +796,7 @@ textarea {
 .text-left, table caption {
   text-align: left; }
 
-.text-right, .data-row__content {
+.text-right, .tag__list .tag__status, .data-row__content {
   text-align: right; }
 
 .text-center, .venue__list__name .icon-angle-right, .login--access, .button, .button--circle, .venue--hero {
@@ -833,7 +840,7 @@ textarea {
   margin-left: auto;
   margin-right: auto; }
 
-.col, .venue__list__image, .venue__list__name, .venue__list__name hgroup, .venue__list__name .icon-angle-right, .data-row__label,
+.col, .venue__list__image, .venue__list__name, .venue__list__name hgroup, .venue__list__name .icon-angle-right, .tag__list .tag__status, .data-row__label, .tag__list .tag__name,
 .data-row__content {
   float: left;
   padding-left: 10px;
@@ -852,7 +859,7 @@ textarea {
   width: -webkit-calc(100% / 12 * 1);
   width: -moz-calc(100% / 12 * 1); }
 
-.col-2, .venue__list__image, .venue__list__name .icon-angle-right {
+.col-2, .venue__list__image, .venue__list__name .icon-angle-right, .tag__list .tag__status {
   width: 16.66667%;
   width: calc(100% / 12 * 2);
   width: -webkit-calc(100% / 12 * 2);
@@ -876,7 +883,7 @@ textarea {
   width: -webkit-calc(100% / 12 * 5);
   width: -moz-calc(100% / 12 * 5); }
 
-.col-6, .col-1-2, .data-row__label,
+.col-6, .col-1-2, .data-row__label, .tag__list .tag__name,
 .data-row__content {
   width: 50%;
   width: calc(100% / 12 * 6);
@@ -901,7 +908,7 @@ textarea {
   width: -webkit-calc(100% / 12 * 9);
   width: -moz-calc(100% / 12 * 9); }
 
-.col-10, .venue__list__name, .venue__list__name hgroup {
+.col-10, .venue__list__name, .venue__list__name hgroup, .tag__list .tag__name {
   width: 83.33333%;
   width: calc(100% / 12 * 10);
   width: -webkit-calc(100% / 12 * 10);
@@ -1243,14 +1250,14 @@ textarea, .form--login input, .form--login button, .button--geolocation {
     color: #349b8f;
     font-family: "OpenSansBold", sans-serif; }
 
-.data-row {
+.data-row, .tag__list .tag {
   padding: 1.5em 10px;
   border-bottom: solid 1px #e7e6e6; }
-  .data-row.current {
+  .data-row.current, .tag__list .current.tag {
     background: #349b8f;
     color: white; }
 
-.data-row__label {
+.data-row__label, .tag__list .tag__name {
   font-family: "OpenSansBold", sans-serif; }
 
 .data-row__content .onoffswitch {
